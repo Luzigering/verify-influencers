@@ -1,0 +1,50 @@
+.leaderboard {
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .leaderboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .top-boxes {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .box {
+    background: #4caf50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    width: 200px;
+  }
+  
+  .ranking table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .ranking th,
+  .ranking td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .ranking th {
+    background: #f1f1f1;
+    font-weight: bold;
+  }
+  
+  .ranking tr:hover {
+    background: #f9f9f9;
+  }
+  

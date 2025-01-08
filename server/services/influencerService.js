@@ -1,5 +1,6 @@
 const Influencer = require('../models/Influencer');
 const Claim = require('../models/Claim');
+const sequelize = require('sequelize');
 
 const calculateReliability = async () => {
   try {

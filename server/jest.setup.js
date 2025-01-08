@@ -1,3 +1,4 @@
+const sequelize = require('sequelize');
 beforeAll(async () => {
     try {
       await sequelize.authenticate();

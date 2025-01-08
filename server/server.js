@@ -7,7 +7,7 @@ const sequelize = require('./config/database');
 const dashboardRoutes = require('./routes/dashboardRoutes');
 
 const app = express();
-const axios = require('axios');
+const axios = require('axios');;
 
 axios.get('https://api.twitter.com/2/tweets/search/recent', { headers: { Bearer: `${process.env.TWITTER_BEARER}` } })
   .then(response => console.log('API funcionando:', response.data))

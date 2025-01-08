@@ -6,7 +6,7 @@ beforeAll(async () => {
       console.error('Erro ao conectar-se ao banco de dados:', error);
       throw error;
     }
-  });
+  });;
   
 
 afterAll(async () => {

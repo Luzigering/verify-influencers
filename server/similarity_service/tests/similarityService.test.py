@@ -10,6 +10,8 @@ def test_similarity_service():
         ]
     }
     response = requests.post(url, json=payload)
-    assert response.status_code == 200
+    if response.status_code != 200:
+        raise AssertionError
     assert len(response.json()) == 2
-    assert response.json()[0]['similarity'] > 0.5
+    if response.json()[0]['similarity'] <= 0.5:
+        raise AssertionError
